@@ -1,177 +1,959 @@
 {
   "intents": [
     {
-      "intent": "Home",
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "name": "Back",
+      "samples": [
+        "go back",
+        "move back",
+        "back up",
+        "return"
+      ],
       "slots": []
     },
     {
-      "intent": "Launch",
+      "name": "Captionsoff",
+      "samples": [
+        "turn off captions"
+      ],
+      "slots": []
+    },
+    {
+      "name": "Captionson",
+      "samples": [
+        "turn on captions"
+      ],
+      "slots": []
+    },
+    {
+      "name": "DescribeShow",
+      "samples": [
+        "Describe {Show}",
+        "What is {Show} about.",
+        "Tell me about {Show}",
+        "Tell me more about {Show}"
+      ],
       "slots": [
         {
-          "name": "Text",
-          "type": "LITERAL"
+          "name": "Show",
+          "type": "LIST_OF_SHOWS",
+          "samples": []
         }
       ]
     },
     {
-      "intent": "Fastforward",
+      "name": "Fastforward",
+      "samples": [
+        "fast forward",
+        "skip ahead",
+        "move ahead"
+      ],
       "slots": []
     },
     {
-      "intent": "Instantreplay",
+      "name": "Home",
+      "samples": [
+        "home",
+        "go home",
+        "go to home"
+      ],
       "slots": []
     },
     {
-      "intent": "Captionson",
+      "name": "Instantreplay",
+      "samples": [
+        "skip back",
+        "instant replay"
+      ],
       "slots": []
     },
     {
-      "intent": "Captionsoff",
-      "slots": []
-    },
-    {
-      "intent": "Rewind",
-      "slots": []
-    },
-    {
-      "intent": "Up",
-      "slots": []
-    },
-    {
-      "intent": "Uptwo",
-      "slots": []
-    },
-    {
-      "intent": "Upthree",
-      "slots": []
-    },
-    {
-      "intent": "Upfour",
-      "slots": []
-    },
-    {
-      "intent": "Upfive",
-      "slots": []
-    },
-    {
-      "intent": "Down",
-      "slots": []
-    },
-    {
-      "intent": "Downtwo",
-      "slots": []
-    },
-    {
-      "intent": "Downthree",
-      "slots": []
-    },
-    {
-      "intent": "Downfour",
-      "slots": []
-    },
-    {
-      "intent": "Downfive",
-      "slots": []
-    },
-    {
-      "intent": "Left",
-      "slots": []
-    },
-    {
-      "intent": "Lefttwo",
-      "slots": []
-    },
-    {
-      "intent": "Leftthree",
-      "slots": []
-    },
-    {
-      "intent": "Leftfour",
-      "slots": []
-    },
-    {
-      "intent": "Leftfive",
-      "slots": []
-    },
-    {
-      "intent": "Right",
-      "slots": []
-    },
-    {
-      "intent": "Righttwo",
-      "slots": []
-    },
-    {
-      "intent": "Rightthree",
-      "slots": []
-    },
-    {
-      "intent": "Rightfour",
-      "slots": []
-    },
-    {
-      "intent": "Rightfive",
-      "slots": []
-    },
-    {
-      "intent": "Back",
-      "slots": []
-    },
+      "name": "Launch",
+      "samples": [
+        "launch {Channel}",
+        "launch {Channel} app",
+        "launch {Channel} channel",
+        "start {Channel}",
+        "start {Channel} app",
+        "start {Channel} channel",
+        "open {Channel}",
+        "open {Channel} app",
+        "open {Channel} channel",
+        "goto {Channel}",
+        "goto {Channel} app",
+        "goto {Channel} channel"
+      ],
+      "slots": [
         {
-      "intent": "Power",
-      "slots": []
-    },
-    {
-      "intent": "Select",
-      "slots": []
-    },
-    {
-      "intent": "Type",
-      "slots": [
-          {
-              "name": "Text",
-              "type": "LITERAL"
-          }
+          "name": "Channel",
+          "type": "LIST_OF_CHANNELS",
+          "samples": []
+        }
       ]
     },
     {
-      "intent": "PlayPause",
+      "name": "Play",
+      "samples": [
+        "Play {Show}"
+      ],
+      "slots": [
+        {
+          "name": "Show",
+          "type": "LIST_OF_SHOWS",
+          "samples": []
+        }
+      ]
+    },
+    {
+      "name": "PlayLatest",
+      "samples": [
+        "Play the latest episode of {Show}",
+        "Play the latest episode of {Show} on {Channel}"
+      ],
+      "slots": [
+        {
+          "name": "Show",
+          "type": "LIST_OF_SHOWS",
+          "samples": []
+        },
+        {
+          "name": "Channel",
+          "type": "LIST_OF_CHANNELS",
+          "samples": []
+        }
+      ]
+    },
+    {
+      "name": "PlayMyNext",
+      "samples": [
+        "Play my next episode on {Channel}",
+        "Play my next episode of {Show} on {Channel}"
+      ],
+      "slots": [
+        {
+          "name": "Channel",
+          "type": "LIST_OF_CHANNELS",
+          "samples": []
+        },
+        {
+          "name": "Show",
+          "type": "LIST_OF_SHOWS",
+          "samples": []
+        }
+      ]
+    },
+    {
+      "name": "PlayPause",
+      "samples": [
+        "play",
+        "pause",
+        "stop"
+      ],
       "slots": []
     },
     {
-      "intent": "Search",
-      "slots": [
-          {
-              "name": "Text",
-              "type": "LITERAL"
-          }
-      ]
-    },
-    {
-      "intent": "SearchChannel",
-      "slots": [
-          {
-              "name": "Text",
-              "type": "LITERAL"
-          },
-          {
-              "name": "Channel",
-              "type": "LITERAL"
-          }
-      ]
-    },
-    {
-      "intent": "Playlastyoutube",
-      "slots": [
-          {
-              "name": "Text",
-              "type": "LITERAL"
-          }
-      ]
-    },
-    {
-      "intent": "HelpIntent",
+      "name": "Power",
+      "samples": [
+        "turn off",
+        "goodbye"
+      ],
       "slots": []
+    },
+    {
+      "name": "Recommend",
+      "samples": [
+        "Recommend a new show",
+        "Recommend a show",
+        "Recommend another show"
+      ],
+      "slots": []
+    },
+    {
+      "name": "Up",
+      "samples": [
+        "go up",
+        "move up"
+      ],
+      "slots": []
+    }
+  ],
+  "types": [
+    {
+      "name": "LIST_OF_CHANNELS",
+      "values": [
+        {
+          "id": null,
+          "name": {
+            "value": "usa",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "bravo",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "telemundo",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "eonline",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "syfy",
+            "synonyms": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "LIST_OF_SHOWS",
+      "values": [
+        {
+          "id": "11fc3caf-6a7b-4476-83c5-14c15a5bdc95",
+          "name": {
+            "value": "suits",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "the magicians",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "odd mom out",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "last chance kitchen",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "below deck",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "mr. robot",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "z nation",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "sitting in diners eating donuts",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "sweet home oklahoma",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Keeping up with the Kardashians",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "colony",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "killjoys",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "clean house",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "channel zero no end house",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "rob and chyna",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "white collar",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "the sinner",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "real housewives of melbourne",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "syfy wire",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "ghost wars",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "face off game face",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "inside the f b i new york",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "wags miami",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "just jillian",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "sharknado 5",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "blood drive",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "famously single",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "watch what happens live",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "team ninja warrior",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "inside the actors studio",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "married to medicine",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Premier League",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "catching kelce",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "according to chrisley",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "la fan",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "chicago pd",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "falling water",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "married to jonas",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "vanderpump rules",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "eyewitness",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "enfoque",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "invite only cabo",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "house of dvf",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "going off menu",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "confederaciones",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "first family of hip hop",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "corazon valiente",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "the real housewives of potomac",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "van helsing",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "the real housewives of atlanta",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "botched by nature",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "movies on usa",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "mariahs world",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "how do i look",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "girlfriends guide to divorce",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "eric and jessie",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "below deck mediterranean",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "law order svu",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "botched",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "wags",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "real housewives of new jersey",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "jerseylicious",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "hollywood and facial",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "the real housewives of auckland",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "andy cohens then and now",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "the real housewives of new jersey",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "playing house",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "12 monkeys",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "revenge body",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "top chef",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "southern charm savannah",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "big star little star",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "million dollar listing los angeles",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "cosplay melee",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "life of kylie",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "battlestar galactica",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "giuliana and bill",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "chrisley knows best",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "ice loves coco",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "motive",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "reunion road trip return to the jersey shore",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "the expanse",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "wynonna earp",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "flipping out",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "tia and tamera",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "bake amends",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "a night with my ex",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "real estate wars",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "shooter",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "imposters",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "southern charm",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "ncis los angeles",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "total bellas",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "burn notice",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "rich kids of beverly hills",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "the real housewives of new york city",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "damnation",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "dark matter",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "summer house",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "beverly hills dog show",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "ladies of london",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "queen of the south",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "ncis",
+            "synonyms": []
+          }
+        }
+      ]
     }
   ]
 }
