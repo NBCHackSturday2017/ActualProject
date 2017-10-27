@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "session": {
+    "new": false,
+    "application": {
+      "applicationId": "arn:aws:lambda:us-east-1:635086341409:function:RokuLambda"
+    },
+    "sessionId": "session1234",
+    "attributes": {},
+    "user": {
+      "userId": null
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "request5678",
+    "intent": {
+      "name": "PlayLast"
+    }
+  }
+}

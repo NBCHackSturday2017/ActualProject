@@ -1,0 +1,182 @@
+Launch launch {netflix|Text}
+Launch launch {plex|Text}
+Launch launch {fandango now|Text}
+Launch launch {netflix|Text} app
+Launch launch {plex|Text} app
+Launch launch {fandango now|Text} app
+Launch launch {netflix|Text} channel
+Launch launch {plex|Text} channel
+Launch launch {fandango now|Text} channel
+Launch start {netflix|Text}
+Launch start {plex|Text}
+Launch start {fandango now|Text}
+Launch start {netflix|Text} app
+Launch start {plex|Text} app
+Launch start {fandango now|Text} app
+Launch start {netflix|Text} channel
+Launch start {plex|Text} channel
+Launch start {fandango now|Text} channel
+Launch open {netflix|Text}
+Launch open {plex|Text}
+Launch open {fandango now|Text}
+Launch open {netflix|Text} app
+Launch open {plex|Text} app
+Launch open {fandango now|Text} app
+Launch open {netflix|Text} channel
+Launch open {plex|Text} channel
+Launch open {fandango now|Text} channel
+Launch goto {netflix|Text}
+Launch goto {plex|Text}
+Launch goto {fandango now|Text}
+Launch goto {netflix|Text} app
+Launch goto {plex|Text} app
+Launch goto {fandango now|Text} app
+Launch goto {netflix|Text} channel
+Launch goto {plex|Text} channel
+Launch goto {fandango now|Text} channel
+
+Launch launch {usa|Text}
+Launch start {usa|Text}
+Launch open {usa|Text}
+Launch goto {usa|Text}
+Launch launch {usa|Text} network
+Launch start {usa|Text} network
+Launch open {usa|Text} network
+Launch goto {usa|Text} network
+
+Home home
+Home go home
+Home go to home
+
+Fastforward fast forward
+Fastforward skip ahead
+Fastforward move ahead
+
+Rewind rewind 
+Rewind move back
+
+Up go up
+Up move up
+
+Uptwo go up two
+Uptwo move up two
+
+Upthree go up three
+Upthree move up three
+
+Upfour go up four
+Upfour move up four
+
+Upfive go up five
+Upfive move up five
+
+Down go down
+Down move down
+
+Downtwo go down two
+Downtwo move down two
+
+Downthree go down three
+Downthree move down three
+
+Downfour go down four
+Downfour move down four
+
+Downfive go down five
+Downfive move down five
+
+Left go left
+Left move left
+
+Lefttwo go left two
+Lefttwo move left two
+
+Leftthree go left three
+Leftthree move left three
+
+Leftfour go left four
+Leftfour move left four
+
+Leftfive go leftfive
+Leftfive move leftfive
+
+Back go back
+Back move back
+
+Right go right
+Right move right
+
+Righttwo go right two
+Righttwo move right two
+
+Rightthree go right three
+Rightthree move right three
+
+Rightfour go right four
+Rightfour move right four
+
+Rightfive go right five
+Rightfive move right five
+
+Instantreplay skip back
+Instantreplay instant replay
+
+PlayPause play
+PlayPause pause
+PlayPause stop
+
+Select go
+Select enter
+Select select
+Select yes
+
+Power turn off
+Power goodbye
+
+Back go back
+Back back up
+Back return
+
+Captionson turn on captions
+
+Captionsoff turn off captions
+
+Type type {futurama|Text}
+Type type {How I met your mother|Text}
+Type type {harry potter|Text}
+
+Search search for {breaking bad|Text}
+Search search for {rick and morty|Text}
+Search search for {ip man|Text} on all channels
+Search play {futurama|Text}
+Search play {harry potter|Text}
+Search play {breaking bad|Text}
+
+SearchChannel search {netflix|Channel} for {breaking bad|Text}
+SearchChannel search {amazon|Channel} for {rick and morty|Text}
+SearchChannel search {plex|Channel} for {harry potter|Text}
+SearchChannel search for {breaking bad|Text} on {netflix|Channel}
+SearchChannel search for {rick and morty|Text} on {amazon|Channel}
+SearchChannel search for {harry potter|Text} on {plex|Channel}
+SearchChannel play {futurama|Text} on {netflix|Channel}
+SearchChannel play {harry potter|Text} on {plex|Channel}
+
+Playlastyoutube play last video on youtube
+Playlastyoutube play the last video on youtube
+
+HelpIntent help
+HelpIntent help me
+HelpIntent what can I ask you
+HelpIntent get help
+HelpIntent to help
+HelpIntent to help me
+HelpIntent what commands can I ask
+HelpIntent what commands can I say
+HelpIntent what can I do
+HelpIntent what can I use this for
+HelpIntent what questions can I ask
+HelpIntent what can you do
+HelpIntent what do you do
+HelpIntent how do I use you
+HelpIntent how can I use you
+HelpIntent what can you tell me

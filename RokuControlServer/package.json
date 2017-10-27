@@ -1,0 +1,11 @@
+{
+  "name": "RokuControlServer",
+  "description": "A server for controlling your local Roku",
+  "version": "0.0.1",
+  "engines": {
+    "node": "8.0.0"
+  },
+  "dependencies": {
+    "node-ssdp": "^2.5.1"
+  }
+}

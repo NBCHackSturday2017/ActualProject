@@ -1,0 +1,295 @@
+{
+	"intents": [
+		{
+			"name": "AMAZON.CancelIntent",
+			"samples": [
+
+			]
+		},
+		{
+			"name": "AMAZON.HelpIntent",
+			"samples": [
+
+			]
+		},
+		{
+			"name": "AMAZON.StopIntent",
+			"samples": [
+
+			]
+		},
+		{
+			"name": "Back",
+			"samples": [
+				"go back",
+				"move back",
+				"back up",
+				"return"
+			],
+			"slots": [
+
+			]
+		},
+		{
+			"name": "Captionsoff",
+			"samples": [
+				"turn off captions"
+			],
+			"slots": [
+
+			]
+		},
+		{
+			"name": "Captionson",
+			"samples": [
+				"turn on captions"
+			],
+			"slots": [
+
+			]
+		},
+		{
+			"name": "Down",
+			"samples": [
+				"go down",
+				"move down"
+			],
+			"slots": [
+
+			]
+		},
+		{
+			"name": "Fastforward",
+			"samples": [
+				"fast forward",
+				"skip ahead",
+				"move ahead"
+			],
+			"slots": [
+
+			]
+		},
+		{
+			"name": "HelpIntent",
+			"samples": [
+				"help",
+				"help me",
+				"what can I ask you",
+				"get help",
+				"to help",
+				"to help me",
+				"what commands can I ask",
+				"what commands can I say",
+				"what can I do",
+				"what can I use this for",
+				"what questions can I ask",
+				"what can you do",
+				"what do you do",
+				"how do I use you",
+				"how can I use you",
+				"what can you tell me"
+			],
+			"slots": [
+
+			]
+		},
+		{
+			"name": "Home",
+			"samples": [
+				"home",
+				"go home",
+				"go to home"
+			],
+			"slots": [
+
+			]
+		},
+		{
+			"name": "Instantreplay",
+			"samples": [
+				"skip back",
+				"instant replay"
+			],
+			"slots": [
+
+			]
+		},
+		{
+			"name": "Launch",
+			"samples": [
+				"launch {Channel}",
+				"launch {Channel} app",
+				"launch {Channel} channel",
+				"start {Channel}",
+				"start {Channel} app",
+				"start {Channel} channel",
+				"open {Channel}",
+				"open {Channel} app",
+				"open {Channel} channel",
+				"goto {Channel}",
+				"goto {Channel} app",
+				"goto {Channel} channel"
+			],
+			"slots": [
+				{
+					"name": "Channel",
+					"type": "LIST_OF_CHANNELS",
+					"samples": [
+						"usa"
+					]
+				}
+			]
+		},
+		{
+			"name": "Left",
+			"samples": [
+				"go left",
+				"move left"
+			],
+			"slots": [
+
+			]
+		},
+		{
+			"name": "PlayPause",
+			"samples": [
+				"play",
+				"pause",
+				"stop"
+			],
+			"slots": [
+
+			]
+		},
+		{
+			"name": "Power",
+			"samples": [
+				"turn off",
+				"goodbye"
+			],
+			"slots": [
+
+			]
+		},
+		{
+			"name": "Rewind",
+			"samples": [
+				"rewind",
+				"move back"
+			],
+			"slots": [
+
+			]
+		},
+		{
+			"name": "Right",
+			"samples": [
+				"go right",
+				"move right"
+			],
+			"slots": [
+
+			]
+		},
+		{
+			"name": "Search",
+			"samples": [
+				"search for {ShowTitle}",
+				"search for {ShowTitle} on all channels",
+				"play {ShowTitle}"
+			],
+			"slots": [
+				{
+					"name": "ShowTitle",
+					"type": "LIST_OF_SHOWS",
+					"samples": [
+						"Mr. Robot"
+					]
+				}
+			]
+		},
+		{
+			"name": "SearchChannel",
+			"samples": [
+				"search {Channel} for {ShowTitle}",
+				"search for {ShowTitle} on {Channel}",
+				"play {ShowTitle} on {Channel}"
+			],
+			"slots": [
+				{
+					"name": "ShowTitle",
+					"type": "LIST_OF_SHOWS",
+					"samples": [
+						"Mr. Robot"
+					]
+				},
+				{
+					"name": "Channel",
+					"type": "LIST_OF_CHANNELS",
+					"samples": [
+						"usa"
+					]
+				}
+			]
+		},
+		{
+			"name": "Select",
+			"samples": [
+				"go",
+				"enter",
+				"select",
+				"yes"
+			],
+			"slots": [
+
+			]
+		},
+		{
+			"name": "Up",
+			"samples": [
+				"go up",
+				"move up"
+			],
+			"slots": [
+
+			]
+		}
+	],
+	"types": [
+		{
+			"name": "LIST_OF_CHANNELS",
+			"values": [
+				{
+					"id": "75151",
+					"name": {
+						"value": "usa",
+						"synonyms": [
+							"usa network",
+							"u s a"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "LIST_OF_SHOWS",
+			"values": [
+				{
+					"id": "86",
+					"name": {
+						"value": "Mr. Robot",
+						"synonyms": [
+
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "LITERAL",
+			"values": [
+
+			]
+		}
+	]
+}
