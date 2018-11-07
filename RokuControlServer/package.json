@@ -6,6 +6,7 @@
     "node": "8.0.0"
   },
   "dependencies": {
-    "node-ssdp": "^2.5.1"
+    "node-ssdp": "^2.5.1",
+    "bson": ">=1.0.5"
   }
 }
